@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+:root{
+    -primary:#094b65;
+
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+
+}
+#header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width :100%;
+    padding: 30px 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    
+}
+#header.logo{
+    color:var(-primary);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+#header ul li a{
+    text-decoration: none;
+    color: var(-primary);
+    border-radius: 20px;
+    padding: 6px 15px;
+
+}
+
+#header ul li a:hover
+#header ul li a.active{
+     background: var(-primary);
+     color: #fff;       
+    } 
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+     content:"";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100px;
+     background: linear-gradient(to top, var(-primary),transparent);
+     z-index: 10;
+}
+
+section img{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+section #text{
+    font-family: 'Rancho' , cursive;
+    font-size: 10vw;
+    text-align: center;
+    position: absolute;
+    line-height: 55em;
+    transform: translateY(-50%);
+
+}
+
+section #textspan{
+    font-size: 20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#button{
+    display: inline-block;
+    background: #fff;
+    color: var(-primary);
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 40px;
+    transform: translateY(100px);
+    padding: 8px 30px;
+}
+
+.sec{
+    position: relative;
+    background: var(-primary);
+
+}
+
+.sec h2{
+    font-size: 3.5em;
+    color: #fff;
+
+}
